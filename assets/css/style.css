@@ -2,25 +2,6 @@
 /* font-family: 'Cinzel', serif;
 font-family: 'Poppins', sans-serif; */
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #fff;
-}
-
-div .logo {
-    margin-top: 22px;
-    background-image: url(../img/white_logo.png);
-    display: inline-block;
-    width: 125px;
-    height: 32px;
-    background-repeat: no-repeat;
-}
-
-
 /* 
 TODO
 Font: Cinzel, poppins.
@@ -28,13 +9,191 @@ border: #ccc.
 color logo: #999.
 color home: #fff.
 color: #333 
-
-https://images.unsplash.com/photo-1486312699619-be057cfc0342?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80
-https://images.unsplash.com/photo-1473170577235-e07d5ee8e382?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
-https://images.unsplash.com/photo-1484169373632-0cfa05237afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
-https://images.unsplash.com/photo-1497088669596-a940e3ab0d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
-https://images.unsplash.com/photo-1472535139094-32c9c4f63f97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
-https://images.unsplash.com/photo-1466873767530-f11ce2656cff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
-https://images.unsplash.com/photo-1466873767530-f11ce2656cff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
 */
 
+/* GLOBAL ----------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: normal 15px 'Poppins', sans-serif;
+}
+
+p, ul {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: -0.1em;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 46px;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 900px;
+}
+
+.hero-image, 
+.primary-content, 
+.secondary-content-gallery {
+    text-align: center;
+}
+
+/* HEADER ----------- */
+header .logo {
+    color: #999;
+    text-transform: uppercase;
+}
+
+header h1 {
+    padding: 8px 0 15px 0;
+}
+
+header nav {
+    display: none;
+}
+
+/* MAIN ----------- */
+/* HERO-IMAGE ----------- */
+.hero-image {
+    background: url(https://images.unsplash.com/photo-1486312699619-be057cfc0342?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80) no-repeat center;
+    background-size: cover;
+    margin: 0 77px;
+    padding: 170px 0;
+}
+
+.hero-image h2 {    
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1em;
+}
+
+/* PRIMARY-CONTENT ----------- */
+.primary-content h3 {
+    padding: 3em 0 2.5em 0;
+}
+
+.primary-content p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+/* SECONDARY-CONTENT-GALLERY ----------- */
+.gallery-row {
+    margin: 55px 0;
+}
+
+.gallery-row :nth-child(2) {
+    padding: 0 54px;
+}
+
+.gallery-image {
+    width: 29%;
+}
+
+/* LAST-CONTENT-TOUR-DATES ----------- */
+.last-content-tour-dates h3 {
+    padding: 0 0 1em 0;
+    text-align: center;
+}
+
+.last-content-tour-dates li {
+    line-height: 2.2em;
+    list-style-type: none;
+}
+
+/* Tour Dates - Add Status */
+.last-content-tour-dates li:first-child::after,
+.last-content-tour-dates li:nth-child(2)::after,
+.last-content-tour-dates li:nth-child(3)::after {
+    content: " - SOLD OUT";
+    color: red;
+}
+
+.last-content-tour-dates li:nth-child(4)::after {
+    content: " - ONLY 4 SPOT AVAILABEL";
+    color: red;
+    font-weight: normal;
+}
+
+.last-content-tour-dates li:nth-child(5)::after,
+.last-content-tour-dates li:last-child::after {
+    content: " - AVAILABLE";
+    color: green;
+    font-weight: normal;
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+    margin-top: 4.5em;
+    border-top: 1px solid #ccc;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-info {
+    margin-top: 25px;
+    text-align: center;
+}
+
+footer div a {
+    font-family: 'Cinzel', serif;
+    /* font-size: 18px; */
+    font-weight: lighter;  
+}
+
+/* SOCIAL MEDIA LINKS ----------- */
+.footer-social-media-links {
+    margin: -35px 0 0 711px;
+    padding: 12px 0 30px 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+    display: inline !important;
+    padding: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+   
+  /* Set Colors for LinkedIn, Google, Facebook, Twitter */
+  .fa-linkedin,
+  .fa-google,
+  .fa-facebook, 
+  .fa-twitter {
+    background-color: #fff;
+    color: #999;
+  }
