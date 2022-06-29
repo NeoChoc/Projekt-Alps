@@ -1,4 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* font-family: 'Cinzel', serif;
 font-family: 'Poppins', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+div .logo {
+    margin-top: 22px;
+    background-image: url(../img/white_logo.png);
+    display: inline-block;
+    width: 125px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+
+
+/* 
+TODO
+Font: Cinzel, poppins.
+border: #ccc.
+color logo: #999.
+color home: #fff.
+color: #333 
+
+https://images.unsplash.com/photo-1486312699619-be057cfc0342?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80
+https://images.unsplash.com/photo-1473170577235-e07d5ee8e382?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+https://images.unsplash.com/photo-1484169373632-0cfa05237afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+https://images.unsplash.com/photo-1497088669596-a940e3ab0d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+https://images.unsplash.com/photo-1472535139094-32c9c4f63f97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
+https://images.unsplash.com/photo-1466873767530-f11ce2656cff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
+https://images.unsplash.com/photo-1466873767530-f11ce2656cff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60
+*/
+
